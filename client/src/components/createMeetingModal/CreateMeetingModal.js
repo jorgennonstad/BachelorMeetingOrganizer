@@ -22,8 +22,10 @@ const CreateMeetingModal = ({ isOpen, closeModal, refreshMeetings }) => {
         notes,
         status,
         location,
+      }, {
+        withCredentials: true, // Include credentials in the request
       });
-
+  
       if (response.status === 201) {
         refreshMeetings(); // Refresh the list of meetings
         closeModal(); // Close the modal
@@ -32,6 +34,7 @@ const CreateMeetingModal = ({ isOpen, closeModal, refreshMeetings }) => {
       console.error('Error creating meeting:', error);
     }
   };
+  
 
   return (
     isOpen && (
