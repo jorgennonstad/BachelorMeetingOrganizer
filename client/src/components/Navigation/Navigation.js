@@ -7,20 +7,6 @@ const Navigation = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const navigate = useNavigate();
 
-  // Check if user is logged in (on page load)
-  useEffect(() => {
-    const checkAuthStatus = async () => {
-      try {
-        const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/users/auth`, { withCredentials: true });
-        setIsLoggedIn(response.data.isAuthenticated);
-      } catch (error) {
-        setIsLoggedIn(false);
-      }
-    };
-
-    checkAuthStatus();
-  }, []);
-
   // Logout function
   const handleLogout = async () => {
     try {

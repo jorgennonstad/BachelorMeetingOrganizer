@@ -43,15 +43,21 @@ const EditMeetingModal = ({ isOpen, closeModal, refreshMeetings, meeting }) => {
     });
 
     try {
-      const response = await axios.put(`${process.env.REACT_APP_API_URL}/api/meetings/${meeting._id}`, {
-        title,
-        date,
-        participants: participants.split(','),
-        agenda,
-        notes,
-        status,
-        location,
-      });
+      const response = await axios.put(
+        `${process.env.REACT_APP_API_URL}/api/meetings/${meeting._id}`,
+        {
+          title,
+          date,
+          participants: participants.split(','),
+          agenda,
+          notes,
+          status,
+          location,
+        },
+        {
+          withCredentials: true, // Include credentials in the request
+        }
+      );
 
       console.log('Response from API:', response); // Log the response from the API
 

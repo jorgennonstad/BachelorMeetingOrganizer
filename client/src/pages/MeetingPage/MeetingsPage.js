@@ -34,10 +34,13 @@ const MeetingsPage = () => {
 
   const refreshMeetings = () => {
     axios
-      .get(`${process.env.REACT_APP_API_URL}/api/meetings`)
+      .get(`${process.env.REACT_APP_API_URL}/api/meetings`, {
+        withCredentials: true, // Include credentials in the request
+      })
       .then((response) => setMeetings(response.data))
       .catch((error) => console.error('Error fetching meetings:', error));
   };
+  
 
   const handleEditClick = (meeting) => {
     setSelectedMeeting(meeting); // Set the selected meeting for editing
