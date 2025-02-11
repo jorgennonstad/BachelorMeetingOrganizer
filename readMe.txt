@@ -17,10 +17,10 @@ This application is built with the MERN stack (MongoDB, Express, React, Node.js)
   - Secure routing that ensures only logged-in users can view meetings and to-do lists.
 
 ## Setup Instructions
-#laste ned backendfiler
+#Download backend files
 npm install
 
-#laste ned frontend filer
+#Download frontend files
 cd client 
 npm install
 
