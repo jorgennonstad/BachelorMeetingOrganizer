@@ -1,0 +1,57 @@
+[
+    {
+      "title": "Team Strategy Meeting",
+      "date": "2025-02-07T10:30:00.000Z",
+      "participants": ["Alice", "Bob", "Charlie"],
+      "agenda": "Discuss team strategy for Q2, focusing on growth opportunities and aligning our team's goals with the company's strategic direction.",
+      "notes": "We need to come up with a clear plan to tackle new market opportunities, improve internal resource utilization, and streamline our processes for better team collaboration. Everyone should come prepared with at least one new initiative idea.",
+      "status": "scheduled",
+      "location": "Conference Room A"
+    },
+    {
+      "title": "Quarterly Financial Review",
+      "date": "2025-03-01T14:00:00.000Z",
+      "participants": ["John", "Sarah", "David"],
+      "agenda": "Review the financial performance of Q1, identify key areas of improvement, and set financial goals for Q2.",
+      "notes": "We need to ensure all departments provide detailed performance reports, focusing on budget vs actual results. This meeting will include discussions on cutting costs, optimizing expenses, and increasing revenue streams.",
+      "status": "scheduled",
+      "location": "Meeting Room B"
+    },
+    {
+      "title": "Project Kickoff - New Website",
+      "date": "2025-02-20T09:00:00.000Z",
+      "participants": ["Emily", "Michael", "Linda", "Tom"],
+      "agenda": "Kickoff meeting to discuss the timeline, resources, and key deliverables for the new website project. Assign roles and responsibilities to team members.",
+      "notes": "The project involves redesigning the company website to enhance the user experience and improve the overall aesthetic. We will discuss initial ideas, milestones, and the project timeline. This is a crucial project that requires full team participation and collaboration.",
+      "status": "scheduled",
+      "location": "Zoom"
+    },
+    {
+      "title": "Client Presentation",
+      "date": "2025-02-15T11:00:00.000Z",
+      "participants": ["Rachel", "Tom", "Client ABC"],
+      "agenda": "Present the new product features to Client ABC and gather feedback. Understand their needs and discuss potential adjustments to the product.",
+      "notes": "Make sure to highlight the unique features of the product that directly align with the client's business needs. Be prepared to answer detailed questions on performance, scalability, and pricing.",
+      "status": "scheduled",
+      "location": "Client's Office"
+    },
+    {
+      "title": "All-Hands Company Meeting",
+      "date": "2025-02-25T16:00:00.000Z",
+      "participants": ["All employees"],
+      "agenda": "Company-wide updates, performance review, and a look into future growth plans. Present progress on key initiatives, departmental goals, and employee recognition.",
+      "notes": "This is the most important company-wide meeting where leadership will share progress on strategic goals, answer questions from employees, and celebrate team successes. Everyone is encouraged to participate actively and provide feedback.",
+      "status": "scheduled",
+      "location": "Main Auditorium"
+    },
+    {
+      "title": "Team Building Event",
+      "date": "2025-03-10T09:00:00.000Z",
+      "participants": ["HR Team", "Management Team"],
+      "agenda": "Plan and organize a team-building event that fosters collaboration, communication, and strengthens interpersonal relationships within the team.",
+      "notes": "We will brainstorm different activities that can enhance teamwork, such as problem-solving games, trust-building exercises, and other fun activities to promote employee engagement. It’s essential that all team members feel included and valued during this event.",
+      "status": "scheduled",
+      "location": "Outdoor Park"
+    }
+  ]
+  

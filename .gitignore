@@ -1,0 +1,14 @@
+# Node.js
+node_modules/
+package-lock.json
+.env
+
+# Operating System files
+.DS_Store
+
+# Logs
+*.log
+
+# IDE/Editor folders
+.vscode/
+.idea/

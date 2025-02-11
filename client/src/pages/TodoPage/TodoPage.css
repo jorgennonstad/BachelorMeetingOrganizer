@@ -1,0 +1,31 @@
+.todo-page {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .add-category-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+
+  .add-category-button:hover {
+    background-color: #186e2c;
+  }
+  
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+
+
+
+  

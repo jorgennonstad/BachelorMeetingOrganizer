@@ -1,0 +1,172 @@
+/* Existing styles */
+.todo-category {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .completed-category {
+    background: #d4f5d4; /* Light green when all tasks are complete */
+  }
+
+  .category-header input{
+    height: 29px;
+    margin: 19.9px 0;
+  }
+  
+  .category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .category-header h2{
+    max-width: 85%;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .category-header h2:hover {
+    color: lightgray;
+  }
+  
+  .delete-icon {
+    color: red;
+    cursor: pointer;
+  }
+
+  .delete-icon:hover {
+    color: darkred;
+  }
+  
+  .todo-input {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .todo-input input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .todo-input button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+  .todo-input button:hover {
+    background-color: darkgreen;
+  }
+  
+  .todo-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  .todo-item {
+    background: #f8f8f8;
+    margin: 5px 0;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+  }
+  
+  /* New checkbox style */
+  .checkbox-wrapper-19 {
+    box-sizing: border-box;
+    --background-color: #fff;
+    --checkbox-height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .checkbox-wrapper-19 input[type=checkbox] {
+    display: none;
+  }
+  
+  .checkbox-wrapper-19 .check-box {
+    height: var(--checkbox-height);
+    width: var(--checkbox-height);
+    background-color: transparent;
+    border: calc(var(--checkbox-height) * .1) solid #000;
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+    transition: border-color ease 0.2s;
+    cursor: pointer;
+  }
+  
+  .checkbox-wrapper-19 .check-box::before,
+  .checkbox-wrapper-19 .check-box::after {
+    box-sizing: border-box;
+    position: absolute;
+    height: 0;
+    width: calc(var(--checkbox-height) * .2);
+    background-color: #34b93d;
+    display: inline-block;
+    transform-origin: left top;
+    border-radius: 5px;
+    content: " ";
+    transition: opacity ease 0.5s;
+  }
+  
+  .checkbox-wrapper-19 .check-box::before {
+    top: calc(var(--checkbox-height) * .72);
+    left: calc(var(--checkbox-height) * .41);
+    box-shadow: 0 0 0 calc(var(--checkbox-height) * .05) var(--background-color);
+    transform: rotate(-135deg);
+  }
+  
+  .checkbox-wrapper-19 .check-box::after {
+    top: calc(var(--checkbox-height) * .37);
+    left: calc(var(--checkbox-height) * .05);
+    transform: rotate(-45deg);
+  }
+  
+  .checkbox-wrapper-19 input[type=checkbox]:checked + .check-box,
+  .checkbox-wrapper-19 .check-box.checked {
+    border-color: #34b93d;
+  }
+  
+  .checkbox-wrapper-19 input[type=checkbox]:checked + .check-box::after,
+  .checkbox-wrapper-19 .check-box.checked::after {
+    height: calc(var(--checkbox-height) / 2);
+    animation: dothabottomcheck-19 0.2s ease forwards;
+  }
+  
+  .checkbox-wrapper-19 input[type=checkbox]:checked + .check-box::before,
+  .checkbox-wrapper-19 .check-box.checked::before {
+    height: calc(var(--checkbox-height) * 1.2);
+    animation: dothatopcheck-19 0.4s ease forwards;
+  }
+  
+  /* Keyframe animations */
+  @keyframes dothabottomcheck-19 {
+    0% { height: 0; }
+    100% { height: calc(var(--checkbox-height) / 2); }
+  }
+  
+  @keyframes dothatopcheck-19 {
+    0% { height: 0; }
+    50% { height: 0; }
+    100% { height: calc(var(--checkbox-height) * 1.2); }
+  }
+  
+  .completed-task {
+    text-decoration: line-through;
+    color: gray;
+  }
+  

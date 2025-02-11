@@ -1,0 +1,131 @@
+/* Meeting Card */
+.meeting-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 0px;
+  max-width: 600px;
+  width: 100%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.meeting-card:hover {
+  transform: scale(1.02);
+}
+
+/* Header */
+.meeting-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2c3e50;
+  padding: 12px;
+  border-radius: 8px 8px 0 0;
+  color: white;
+}
+
+.meeting-header h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+/* Status Badge */
+.status {
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.scheduled {
+  background: #f0f8ff;
+  color: #007bff;
+}
+
+.ongoing {
+  background: #ffcc00;
+  color: #6b4f1f;
+}
+
+.completed {
+  background: #28a745;
+  color: #ffffff;
+}
+
+.cancelled {
+  background: #e74a3b;
+  color: #ffffff;
+}
+
+/* Meeting Details */
+.meeting-card-content {
+  padding: 15px;
+}
+
+.meeting-details strong {
+  color: #333;
+  font-size: 1rem;
+}
+
+.meeting-details p {
+  margin: 5px 0;
+}
+
+/* Participants Section */
+.meeting-extra ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.meeting-extra li {
+  background: #dfe6e9;
+  margin: 5px 0;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Actions */
+.meeting-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Edit and Delete Icons */
+.meeting-actions svg {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.meeting-actions svg:hover {
+  color: #e74c3c;
+}
+
+/* Delete Icon */
+.card-footer {
+  text-align: right;
+}
+
+.card-footer svg {
+  cursor: pointer;
+  color: red;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.card-footer svg:hover {
+  color: rgb(187, 0, 0);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .meeting-card {
+    width: 90%;
+  }
+
+  .meeting-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
